@@ -1,5 +1,8 @@
 # web-application-with-security-vulnerabilities
-a web application with security vulnerabilities for aspiring cyber professionals. Containing some vulnerabilities from the OWASP top 10:
+
+Project 3 task: web application with security vulnerabilities for aspiring cyber professionals. Containing some vulnerabilities from the OWASP top 10
+
+Some that I included are:
 
 A05: Security Misconfiguration - No validation, no password rules, weak or no authentication mechanisms.
 
