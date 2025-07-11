@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <h1>Let's sign in to get you started.</h1>
+
+    <p>Enter your credentials</p>
+
+    <div>
+
+
+    <label for="uname">Username:</label>
+    <input type="text" id="uname" name="Username" placeholder="eg. Timothy">
+    <br>
+    </div>
+ 
+        
+    </a>
+
+    <div>
+        <br>
+        <!-- No validation required. Try leaving fields blank! -->
+        <label for="Lname">Surname:</label>
+        <input type="text" id="lname" name="lname" placeholder="eg. Spokesman">
+        </div>
+    <div>
+        <br>
+        <label for="Pword">Password:</label>
+        <input type="text" id="pword" name="pword" placeholder="eg. 12345">
+        <br>
+
+    </div>
+
+     <div>
+        <br>
+       <label for="Email">Email:</label>
+       <input type="email" id="Email" name="Email" placeholder="eg. TimothySpokesman@gmail.com">
+       <br>
+    </div>
+
+        <br>
+
+        <button onclick="checkLogin()">Sign in</button>
+
+        <script>
+
+  function checkLogin() {
+    const password = document.getElementById("pword").value;
+
+    if (password === "admin123") {
+      // Go to admin page if password is correct
+      window.location.href = "admin.html";
+    } else {
+      // Otherwise go to the regular page
+      window.location.href = "Info.html";
+    }
+  }
+    </script>
+
+
+<!--admin only password admin123-->
+<script src="index.js"></script>
+</body>
+</html>
